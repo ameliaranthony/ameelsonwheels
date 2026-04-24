@@ -43,29 +43,22 @@ a:hover {
 }
 .bio {
     display: flex;
-    gap: 40px;
     align-items: flex-start;
+    gap: 30px;
 }
 
 .bio-text {
-    flex: 1;
+    flex: 2;
 }
 
 .bio-image {
     flex: 1;
+    max-width: 300px; /* keeps the column narrow */
 }
 
 .bio-image img {
     width: 100%;
     height: auto;
-    max-width: 300px; /* optional: keeps image from getting huge */
+    display: block;
 }
-@media (max-width: 768px) {
-    .bio {
-        flex-direction: column;
-    }
-
-    .bio-image img {
-        max-width: 100%;
-    }
 }
