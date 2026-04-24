@@ -42,20 +42,18 @@ a:hover {
   color: #8B0000;
 }
 .bio {
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* exact 50/50 split */
+    gap: 60px;
+    align-items: start;
 }
 
+/* Make text column narrower + readable */
 .bio-text {
-    flex: 2;
+    max-width: 420px;   /* controls line length */
 }
 
-.bio-image {
-    flex: 1;
-    max-width: 300px; /* keeps the column narrow */
-}
-
+/* Image column */
 .bio-image img {
     width: 100%;
     height: auto;
