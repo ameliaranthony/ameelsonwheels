@@ -41,3 +41,31 @@ a:visited {
 a:hover {
   color: #8B0000;
 }
+.bio {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.bio-text {
+    flex: 1;
+}
+
+.bio-image {
+    flex: 1;
+}
+
+.bio-image img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* optional: keeps image from getting huge */
+}
+@media (max-width: 768px) {
+    .bio {
+        flex-direction: column;
+    }
+
+    .bio-image img {
+        max-width: 100%;
+    }
+}
